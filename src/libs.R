@@ -1,0 +1,12 @@
+suppressPackageStartupMessages({
+	library(readr)
+	library(dplyr)
+	library(ggplot2)
+	library(glue)
+	library(tidyr)
+	library(here)
+	library(scales)
+	library(shiny)
+	library(lubridate)
+	library(plotly)
+})
