@@ -1,0 +1,8 @@
+{
+    "name": "covid",
+    "short_name": "covid",
+    "description": "New Cases & Deaths from Covid 19",
+    "lang": "en-US",
+    "start_url": "https://robertmylesmcdonnell.shinyapps.io/covid/",
+    "display": "standalone"
+}
