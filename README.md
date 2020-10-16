@@ -4,7 +4,7 @@ Shiny App on new cases and deaths. Focused on Europe and North America, particul
 
 You can see it [here](https://robertmylesmcdonnell.shinyapps.io/covid/), it looks like this:
 
-![](https://imgur.com/eohHBzl)
+![covid_app_image](https://imgur.com/eohHBzl)
 
 I made this because the Irish Government's Covid App shows a graph of cases only. I don't think that's helpful.
 
