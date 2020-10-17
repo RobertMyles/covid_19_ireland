@@ -16,15 +16,3 @@ if (is.na(checktime)) {
   df <- read_csv("data/data_raw.csv",
   							 col_types = cols())
 }
-
-df <- df %>% 
-	filter(
-		continent %in% c("Europe", "North America"),
-		!location %in% c(
-			"Bonaire Sint Eustatius and Saba", "Antigua and Barbuda",
-			"British Virgin Islands", "Anguilla", "Aruba", "Belize",
-			"Cayman Islands", "Curacao", "Saint Vincent and the Grenadines",
-			"Sint Maarten (Dutch part)", "Turks and Caicos Islands",
-			"United States Virgin Islands"
-										 )
-		)
