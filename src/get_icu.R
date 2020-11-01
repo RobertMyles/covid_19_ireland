@@ -26,7 +26,6 @@ get_prep_icu <- function() {
 			icu_admissions_per_million = round(icu_admissions_per_million, 3)
 			)
 	
-	
 	return(icu)
 }
 

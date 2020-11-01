@@ -8,6 +8,7 @@ nice <- as_labeller(
 	c(
 		new_cases_smoothed_per_million = "Cases Per Million", 
 		new_deaths_smoothed_per_million = "Deaths Per Million",
-		icu_admissions_per_million = "ICU Admissions Per Million"
+		icu_admissions_per_million = "ICU Admissions Per Million",
+		positive_rate = "Positive Rate"
 	)
 )

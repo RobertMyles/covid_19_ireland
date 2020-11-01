@@ -9,7 +9,7 @@ df <- suppressMessages(
 	select(
 		date, new_deaths_smoothed_per_million, 
 		new_cases_smoothed_per_million, location,
-		continent
+		continent, positive_rate
 		) %>% 
 	filter(date >= "2020-01-27")
 
@@ -17,11 +17,12 @@ icu <- get_prep_icu()
 
 df <- full_join(df, icu, by = c("location", "date")) %>% 
 	filter(
-		continent %in% c("Europe", "North America"),
+		continent %in% c("Europe", "North America", "South America"),
 		location %in% c(
 			"Brazil", "Ireland", "United Kingdom", "United States",
 			"Sweden", "Spain", "France", "Germany", "Netherlands",
-			"Belgium", "Denmark", "Norway", "Italy", "Germany"
+			"Belgium", "Denmark", "Norway", "Italy", "Germany",
+			"Brazil"
 		)
 	)
 

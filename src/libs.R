@@ -14,4 +14,8 @@ suppressPackageStartupMessages({
 	library(ISOweek)
 	library(forecast)
 	library(tidyr)
+	library(jsonlite)
+	library(sf)
+	library(stringr)
+	library(shinycssloaders)
 })
