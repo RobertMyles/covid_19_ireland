@@ -21,6 +21,6 @@ intro_div <- div(
 		a("forecast package.", href = "https://github.com/robjhyndman/forecast"),
 		span("For code, see "),
 		a("here.", href = "https://github.com/robertmyles/covid_19_ireland")
-	),
-	div("Warning: map may take some time to render.")
+	)#,
+	# div("Warning: map may take some time to render.")
 )
