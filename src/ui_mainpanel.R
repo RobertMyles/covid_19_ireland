@@ -1,11 +1,14 @@
-main_panel <- column(
+main_panel_desktop <- column(
   8,
-  plotlyOutput("mainplot", height = "100%")
-  # tabsetPanel(
-  #   type = "tabs",
-  #   tabPanel("Cases", ),
-  #   tabPanel("Ireland Case Map", plotOutput("mapplot") %>% 
-  #              withSpinner(color = "#F02A29", type = 8)),
-  #   id = "tab"
-  # )
+  tabsetPanel(
+    type = "tabs",
+    tabPanel("Cases", plotlyOutput("mainplot", height = "100%")),
+    tabPanel("Ireland Case Map", plotOutput("mapplot") %>%
+               withSpinner(color = "#F02A29", type = 8)),
+    id = "tab"
+  )
+)
+main_panel_mobile <- column(
+  8,
+  plotlyOutput("mainplot", height = "300px")
 )

@@ -5,8 +5,8 @@ account: robertmylesmcdonnell
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3035397
-bundleId: 3806786
+bundleId: 3812686
 url: https://robertmylesmcdonnell.shinyapps.io/covid/
-when: 1604231652.29254
+when: 1604355682.81629
 asMultiple: FALSE
 asStatic: FALSE

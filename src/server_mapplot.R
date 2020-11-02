@@ -14,7 +14,7 @@ map_plot <- function(input) {
           barwidth = 15, barheight = 0.8
         )
       ) +
-      scale_fill_distiller(palette = "YlOrRd", guide = "colourbar")
+      scale_fill_viridis_c(guide = "colourbar")
   })
 }
   
