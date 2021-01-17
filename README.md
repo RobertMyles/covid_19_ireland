@@ -15,4 +15,5 @@ Data come from [Our World in Data](https://ourworldindata.org/), specifically [h
 
 - *Update 2020-10-17:* added ICU admissions per 100k, from the [European Centre for Disease Prevention and Control](ttps://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19). These numbers are not available for all countries, and are adjusted to be _per million_ to better compare with Our World in Data's numbers, which are per million. They are also only available weekly, and so have been expanded out to a daily count using `na.interp()` from the [forecast](ttps://github.com/robjhyndman/forecast) package.  
 - *Update 2020-26-10:* added Brazil and the positive rate. The positive rate is currently `NA` but I expect it will be used more and more. 
+- *Update 2021-01-71:* added vaccinations data from Our World in Data. 
 
