@@ -1,11 +1,8 @@
 
 get_prep_icu <- function() {
 	# get file
-	url <- "https://www.ecdc.europa.eu/sites/default/files/documents/hosp_icu_all_data_2020-10-15.xlsx"
-	tmp <- tempfile(fileext = ".xlsx")
-	GET(url = url, write_disk(tmp))
-	icu <- read_excel(tmp)
-	unlink(tmp)
+	url <- "https://opendata.ecdc.europa.eu/covid19/hospitalicuadmissionrates/csv/data.csv"
+	icu <- fread(url) %>% as_tibble()
 	# prep
 	icu <- icu %>% 
 		filter(
@@ -23,7 +20,8 @@ get_prep_icu <- function() {
 		complete(date = seq.Date(min(date), max(date), by = "day")) %>% 
 		mutate(
 			icu_admissions_per_million = na.interp(icu_admissions_per_million),
-			icu_admissions_per_million = round(icu_admissions_per_million, 3)
+			icu_admissions_per_million = round(icu_admissions_per_million, 3),
+			date = as.character(date)
 			)
 	
 	return(icu)

@@ -35,7 +35,9 @@ server <- function(input, output, session) {
   output$activeTab <- reactive(return(input$tab))
   outputOptions(output, 'activeTab', suspendWhenHidden = FALSE)
   output$mainplot <- main_plot(input)
+  output$vaccplot <- vacc_plot(input)
   output$mapplot <- map_plot(input)
+  output$ageplot <- age_plot(input)
 }
 
 shinyApp(ui = ui, server = server)

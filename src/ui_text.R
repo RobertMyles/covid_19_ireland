@@ -2,16 +2,19 @@
 title_panel <- titlePanel("New Cases & Deaths, Covid-19")
 
 intro_div <- div(
-	p("For selected countries. Cases shown are per million people."),
+	p("For selected countries. Cases shown are per million people. 
+		To see everything available, view this on a desktop computer."),
 	div(
 		span("Data comes from "),
 		a("Our World in Data", href = "https://ourworldindata.org/"),
 		span(", specifically "),
 		a("here", href = "https://covid.ourworldindata.org/data/owid-covid-data.csv"),
-		span(", and from the "),
-		a("European Centre for Disease Prevention and Control.",
+		span(", from the "),
+		a("European Centre for Disease Prevention and Control ",
 			href = "https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19"
-		)
+		),
+		span(" and from the Irish Government's Covid-19"),
+		a("Data Hub.", href = "https://covid-19.geohive.ie/")
 	),
 	div(
 		span(
